@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Smooch+Sans:wght@100..900&display=swap');
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #648298;
+  --secondary-color: #546d58;
+  --accent1-color: #a0835a;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Grechen Fuemen;
+  --paragraph-font: Smooch Sans, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #648298;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #648298; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #546d58  ;
+  --nav-link-color: white;
+  --nav-background-color: #648298;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+body {
+    margin: 0;
+    font-size: 25px;
+}
+#wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+p {
+    font-family: var(--paragraph-font);
+}
+a {
+    font-family: var(--paragraph-font);
+}
+header {
+    background-color: #648298;
+    display: grid;
+    grid-template-columns: 150px auto;
+    height: 90px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover {
+    background-color: #396E94;
+    color: #daf6fb;
+}
+.logo {
+    height: 90px;
+    
+}
+#hero_container {
+    position: relative;
+}
+#hero-img {
+    width: 100%;
+}
+#paragraph-1 {
+    background-color: #546d58;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#container-2 {
+    display: flex;
+    gap: 50px;
+}
+#gear-img {
+    float: left;
+    width: 40%;
+    margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#paragraph-2 {
+    float: left;
+    width: 40%;
+    margin: 50px;
+    color: #648298;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#container-2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+    background-color: #648298;
+    height: 75px;
+}
