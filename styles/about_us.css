@@ -1,0 +1,36 @@
+#hero img{
+    width: 100%;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.team img{
+    grid-column: 1/2;
+    padding: 25px;
+    width: 95%;
+}
+
+.team p{
+    grid-column: 2/3;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+.safety img{
+    max-height: 400px;
+    width: 85%;
+    padding: 25px 100px 25px 100px;
+    overflow: clip;
+}
+
+.safety p{
+    grid-row: 2/3;
+    padding: 25px 100px 50px 100px;
+    text-align: center;
+    margin: auto;
+    max-height: 150px;
+}
